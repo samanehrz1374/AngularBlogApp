@@ -1,0 +1,29 @@
+<header>
+    <div>
+        <span class="logo-1">The</span>
+        <span class="logo-2">Day</span>
+        <span class="logo-3">Blog</span>
+    </div>
+</header>
+
+<main *ngIf="blogPosts$ | async as blogPosts">
+    
+    <div class="blog-posts-container" *ngFor="let blogPost of blogPosts.items">
+        
+        <img [src]="blogPost.fields.featuredImage.fields.file.url">
+        
+        <div class="box">
+            <h2>{{ blogPost.fields.title }}</h2>
+            <p class="author">{{ blogPost.fields.author}}</p>
+            <p>{{ blogPost.fields.summary}}</p>
+        </div>
+        
+        
+        <div>
+
+            <a [routerLink]="['blog', blogPost.sys.id]" class="btn btn-secondary">Read More</a>
+        </div>
+
+    </div>
+
+</main>

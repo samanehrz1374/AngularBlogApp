@@ -1,1 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #353535;
+
+
+}
+
+header{
+    width:100%;
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header div span {
+    display: block;
+    text-align: center;
+}
+
+.logo-2{
+    font-size: 50px ;
+    font-weight:  bold;
+    margin-left: -5px;
+}
+
+.logo-3 {
+    letter-spacing: 20px;
+}
+
+.blog-posts-container{
+    max-width: 400px;
+    /* margin: 0 auto; */
+    display: inline-block;
+    margin-bottom: 150px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    height: 800px;
+    overflow: hidden;
+    margin-left: 100px;
+
+
+}
+.box{
+    width: 350px;
+    height: 300px;
+}
+.blog-posts-container img{
+    width: 350px;
+    height:400px;
+    margin-bottom: 20px;
+}
+
+.blog-posts-container h2{
+    margin-bottom: 20px;
+}
+.blog-posts-container p{
+    text-align: justify;
+   
+}
+
+.blog-posts-container .author{
+    margin-bottom: 20px;
+}
+
+.blog-posts-container .summary{
+    margin-bottom: 20px;
+}
+
+.post-container{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 150px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+
+
+.post-container img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.post-container h2{
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.post-container p{
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.author {
+    color: #AAA ;
+}
